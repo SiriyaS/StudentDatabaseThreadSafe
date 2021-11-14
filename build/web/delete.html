@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Student Database Manager</h1>
+        <br>
+        <p>Delete student by ID, please enter <b>ID</b> that you want to delete.</p>
+        <br>
+        <form name="main" action="deleteStudent" method="POST">
+            ID &emsp; <input type="text" name="id" value="" size="10" />
+            <br><br>
+            <input type="submit" value="Delete Student" name="delete" />
+            <br><br><br>
+        </form>
+        
+        <hr>
+        <br>
+        <form>
+            <input type="button" onclick="window.location.href='index.html';" value="Back to Home" />
+        </form>
+    </body>
+</html>

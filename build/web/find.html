@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Student Database Manager</h1>
+        <br>
+        <p>Find student by select filter and type keyword you want.</p>
+        <p style="color:red;"><em>* For "All Students" filter <b>no need</b> to enter input in textbox.</em></p>
+        <br>
+        <form name="main" action="findStudent" method="POST">
+            Filter By &emsp;
+            <input type="radio" id="all" name="filterBy" value="All" />
+            <label for="all">All Students</label> &emsp;
+            <input type="radio" id="id" name="filterBy" value="ID" />
+            <label for="id">ID</label> &emsp;
+            <input type="radio" id="name" name="filterBy" value="Name" />
+            <label for="name">Name</label> &emsp;
+            <input type="radio" id="gpa" name="filterBy" value="GPA" />
+            <label for="gpa">GPA</label>
+            <br><br>
+            Search for &emsp;<input type="text" name="filter" value="" size="15" />
+            <br><br>
+            <input type="submit" value="Find Student" name="search" />
+            <br><br><br>
+        </form>
+        
+        <hr>
+        <br>
+        <form>
+            <input type="button" onclick="window.location.href='index.html';" value="Back to Home" />
+        </form>
+    </body>
+</html>
